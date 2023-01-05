@@ -9,7 +9,7 @@ export default function index(): JSX.Element {
 	return (
 		<Box p={10}>
 			{/* <Gradient /> */}
-			{/* <ColorMode /> */}
+			<ColorMode />
 		</Box>
 	);
 }

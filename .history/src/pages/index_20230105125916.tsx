@@ -1,0 +1,16 @@
+import React from 'react';
+import { Box, Container, Text, Flex, Grid, Button, SimpleGrid } from '@chakra-ui/react';
+import Gradient from '../components/Gradient';
+import ColorMode from '../components/ColorMode';
+
+
+export default function index(): JSX.Element {
+
+	return (
+		<Box p={10}>
+			{/* <Gradient /> */}
+			{/* <ColorMode /> */}
+			<ModalComponent />
+		</Box>
+	);
+}

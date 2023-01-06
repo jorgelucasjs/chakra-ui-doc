@@ -7,12 +7,10 @@ import TabsComponents from '../components/TabsComponents';
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
 import SkeletonComponents from '../components/SkeletonComponents';
 import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react';
-import FormControl from '../components/FormControl';
-
 export default function index(): JSX.Element {
 
 	return (
-		<Box p={10} h={'100vh'} bg='#777'>
+		<Box p={10} h={'100vh'}>
 			{/* <Gradient /> */}
 			{/* <ColorMode /> */}
 			{/* <ModalComponent /> */}
@@ -75,6 +73,7 @@ export default function index(): JSX.Element {
 					<Avatar size='2xl' name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />{' '}
 				</WrapItem>
 			</Wrap> */}
+
 			<FormControl />
 		</Box>
 	);

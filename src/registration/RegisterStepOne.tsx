@@ -8,20 +8,40 @@ export default function RegisterStepOne() {
 
 	return (
 		<Flex justify={'center'}>
-			<Box width={breakpoints} mt={200} >
-				<Box p={3} pb={0}>
+			<Box width={breakpoints} mt={200}>
+
+				<Box p={5} pb={0}>
 					<Heading as='h1' fontSize='2xl' mb={1} fontWeight='bold'>Bem-vindo ao Toque task!</Heading>
 					<Text fontSize='14' color={'#555555'} lineHeight='5'>
 						Precisamos de algumas informações para criar seu perfil!
 						Ah,você pode editar essas informações depois.
 					</Text>
+
+					<Box mt={'2'}>
+						<Text fontSize='14' color={'#555555'}>Passo 1 de 4</Text>
+						<Box display={'flex'} justifyContent='space-between' mt={2}>
+							<Box w={'23%'} border='1px solid #b90505'></Box>
+							<Box w={'23%'} border='1px solid #fff'></Box>
+							<Box w={'23%'} border='1px solid #fff'></Box>
+							<Box w={'23%'} border='1px solid #fff'></Box>
+						</Box>
+					</Box>
 				</Box>
+
 				<Box bg='#fff' p={5} mt={5} borderRadius={5} border='1px solid #ddd'>
 					<FormControl as='form'>
-						<FormLabel fontSize='14' mb='4'>Informe seu email</FormLabel>
+						<FormLabel fontSize='14' mb='4'>Nome completo</FormLabel>
 						<Input
-							type='email'
-							placeholder='example@gmail.com'
+							type='text'
+							placeholder='ex: Toque Task'
+							_placeholder={{ opacity: 1, color: '#888', fontSize: '13' }}
+							required
+						/>
+						<FormLabel fontSize='14' mb='4'>Nome de usuário</FormLabel>
+						<Input
+							type='text'
+							placeholder='toque-task.com/'
+							_placeholder={{ opacity: 1, color: '#888', fontSize: '13' }}
 							required
 						/>
 						<Button

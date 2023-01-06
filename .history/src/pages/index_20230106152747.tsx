@@ -3,9 +3,8 @@ import { Box, Text, Flex, FormControl, FormLabel, Input, Button, Heading } from 
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 export default function index(): JSX.Element {
-
-	const breakpoints = { base: '100%', sm: '80%', md: '32%' };
 	
+	const breakpoints = { base: '100%', sm: '80%', md: '32%' };
 	return (
 		<Flex justify={'center'} bg={'#F1F1F1'} height='100vh' >
 			<Box width={breakpoints} mt={200} >
